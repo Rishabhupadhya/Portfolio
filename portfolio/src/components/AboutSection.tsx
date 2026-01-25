@@ -44,13 +44,13 @@ export default function AboutSection() {
         transition={{ duration: 0.6 }}
         className="mb-20"
       >
-        <p className="text-sm uppercase tracking-widest text-blue-600 mb-3">
+        <p className="text-sm uppercase tracking-widest text-[#00BFFF]-600 mb-3">
           About Me
         </p>
 
         <h2 className="text-4xl md:text-5xl font-bold leading-tight">
           Building Production-Ready Systems <br className="hidden md:block" />
-          with <span className="text-blue-600">Cloud, DevOps & AI</span>
+          with <span className="text-[#00BFFF]-600">Cloud, DevOps & AI</span>
         </h2>
       </motion.div>
 
@@ -73,7 +73,7 @@ export default function AboutSection() {
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
               Associate Software Engineer II at Optum Global Solutions,
               contributing to enterprise-scale healthcare platforms supporting{" "}
-              <span className="font-semibold text-blue-600">
+              <span className="font-semibold text-[#00BFFF]-600">
                 140M+ clinical decisions annually
               </span>
               . I build secure, fault-tolerant, and performance-critical services.
@@ -98,9 +98,9 @@ export default function AboutSection() {
                 >
                   <Icon
                     size={36}
-                    className="text-gray-500 group-hover:text-blue-600 transition-colors"
+                    className="text-gray-500 group-hover:text-[#00BFFF]-600 transition-colors"
                   />
-                  <span className="text-sm text-gray-600 group-hover:text-blue-600 transition-colors">
+                  <span className="text-sm text-gray-600 group-hover:text-[#00BFFF]-600 transition-colors">
                     {name}
                   </span>
                 </div>
@@ -123,7 +123,7 @@ export default function AboutSection() {
             <h4 className="text-xl font-semibold">
               Optum Global Solutions (UHG)
             </h4>
-            <p className="text-blue-600 text-sm">
+            <p className="text-[#00BFFF]-600 text-sm">
               Associate Software Engineer II · Dec 2025 – Present
             </p>
             <p className="text-gray-700 mt-3">
@@ -144,7 +144,7 @@ export default function AboutSection() {
             <h4 className="text-xl font-semibold">
               Aptiv Components Pvt. Ltd.
             </h4>
-            <p className="text-blue-600 text-sm">
+            <p className="text-[#00BFFF]-600 text-sm">
               Software Engineer · Jul 2025 – Dec 2025
             </p>
             <p className="text-gray-700 mt-3">
@@ -168,7 +168,7 @@ export default function AboutSection() {
             <p className="font-medium mt-1">
               SRM Institute of Science and Technology
             </p>
-            <p className="text-blue-600 text-sm">
+            <p className="text-[#00BFFF]-600 text-sm">
               B.Tech in Computer Science & Engineering · CGPA 9.33
             </p>
           </motion.div>
