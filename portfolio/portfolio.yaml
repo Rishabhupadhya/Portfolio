@@ -1,0 +1,6 @@
+✔ TypeScript? → No
+✔ ESLint? → Yes
+✔ Tailwind CSS? → Yes
+✔ src/ directory? → Yes
+✔ App Router? → Yes
+✔ import alias? → Yes (@/*)
