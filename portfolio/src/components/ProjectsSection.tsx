@@ -15,7 +15,7 @@ export default function ProjectsSection() {
             <p className="text-gray-600 dark:text-gray-400 mt-2">
               {p.description}
             </p>
-            <p className="text-sm mt-3 text-blue-500">{p.tech}</p>
+            <p className="text-sm mt-3 text-[#00BFFF]">{p.tech}</p>
           </div>
         ))}
       </div>

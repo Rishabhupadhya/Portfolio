@@ -20,10 +20,10 @@ export default function ContactSection() {
 
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         formRef.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
       .then(
         () => {
@@ -50,7 +50,7 @@ export default function ContactSection() {
 
           {/* Heading */}
           <h2
-            className="text-5xl md:text-6xl font-bold text-[#00BFFF]-600"
+            className="text-5xl md:text-6xl font-bold text-[#00BFFF]"
             style={{ fontFamily: "'Pacifico', cursive" }}
           >
             Get in touch <br /> with me
@@ -67,10 +67,10 @@ export default function ContactSection() {
             {/* Phone */}
               <a
                 href="tel:+917011377819"
-                className="flex items-center gap-4 text-gray-700 hover:text-[#00BFFF]-600 transition"
+                className="flex items-center gap-4 text-gray-700 hover:text-[#00BFFF] transition"
                 aria-label="Call Phone Number"
               >
-                <FaPhoneAlt size={22} className="text-[#00BFFF]-600" />
+                <FaPhoneAlt size={22} className="text-[#00BFFF] transition" />
                 <span className="text-lg font-medium">
                   +91&nbsp;7011377819
                 </span>
@@ -84,7 +84,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="text-gray-600 hover:text-[#00BFFF]-600 transition"
+                className="text-gray-600 hover:text-[#00BFFF] transition"
               >
                 <FaGithub size={28} />
               </a>
@@ -94,7 +94,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="text-gray-600 hover:text-[#00BFFF]-600 transition"
+                className="text-gray-600 hover:text-[#00BFFF] transition"
               >
                 <FaLinkedin size={28} />
               </a>
@@ -102,7 +102,7 @@ export default function ContactSection() {
               <a
                 href="mailto:rishabh.292002@gmail.com"
                 aria-label="Email"
-                className="text-gray-600 hover:text-[#00BFFF]-600 transition"
+                className="text-gray-600 hover:text-[#00BFFF] transition"
               >
                 <FaEnvelope size={28} />
               </a>
@@ -154,7 +154,7 @@ export default function ContactSection() {
             <div className="pt-4">
               <button
                 type="submit"
-                className="px-8 py-3 bg-blue-600 text-white rounded-md font-medium hover:bg-blue-700 transition"
+                className="px-8 py-3 bg-[#00BFFF] text-white rounded-md font-medium hover:bg-blue-700 transition"
               >
                 Send Message
               </button>
@@ -169,7 +169,7 @@ export default function ContactSection() {
         aria-label="Back to top"
         className="fixed bottom-6 right-6
                    p-3 rounded-full
-                   bg-blue-600 text-white
+                   bg-[#00BFFF] text-white
                    shadow-lg
                    hover:bg-blue-700
                    transition"
