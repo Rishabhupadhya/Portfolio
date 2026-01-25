@@ -50,7 +50,7 @@ export default function ContactSection() {
 
           {/* Heading */}
           <h2
-            className="text-5xl md:text-6xl font-bold text-blue-600"
+            className="text-5xl md:text-6xl font-bold text-[#00BFFF]-600"
             style={{ fontFamily: "'Pacifico', cursive" }}
           >
             Get in touch <br /> with me
@@ -67,10 +67,10 @@ export default function ContactSection() {
             {/* Phone */}
               <a
                 href="tel:+917011377819"
-                className="flex items-center gap-4 text-gray-700 hover:text-blue-600 transition"
+                className="flex items-center gap-4 text-gray-700 hover:text-[#00BFFF]-600 transition"
                 aria-label="Call Phone Number"
               >
-                <FaPhoneAlt size={22} className="text-blue-600" />
+                <FaPhoneAlt size={22} className="text-[#00BFFF]-600" />
                 <span className="text-lg font-medium">
                   +91&nbsp;7011377819
                 </span>
@@ -84,7 +84,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="text-gray-600 hover:text-blue-600 transition"
+                className="text-gray-600 hover:text-[#00BFFF]-600 transition"
               >
                 <FaGithub size={28} />
               </a>
@@ -94,7 +94,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="text-gray-600 hover:text-blue-600 transition"
+                className="text-gray-600 hover:text-[#00BFFF]-600 transition"
               >
                 <FaLinkedin size={28} />
               </a>
@@ -102,7 +102,7 @@ export default function ContactSection() {
               <a
                 href="mailto:rishabh.292002@gmail.com"
                 aria-label="Email"
-                className="text-gray-600 hover:text-blue-600 transition"
+                className="text-gray-600 hover:text-[#00BFFF]-600 transition"
               >
                 <FaEnvelope size={28} />
               </a>
