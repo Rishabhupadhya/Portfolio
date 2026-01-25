@@ -53,7 +53,7 @@ export default function Header() {
           {/* Logo */}
           <a href="#top" className="flex items-center gap-3">
             <Image src="/logo-ru-v2.png" alt="RU Logo" width={32} height={32} />
-            <span className="text-sm font-semibold text-blue-600 dark:text-blue-500">
+            <span className="text-sm font-semibold text-[#00BFFF]-600 dark:text-[#00BFFF]-500">
               Rishabh Upadhyay
             </span>
           </a>
@@ -66,8 +66,8 @@ export default function Header() {
   href={`#${sec}`}
   className={`transition-colors ${
     active === sec
-      ? "text-blue-600 dark:text-blue-500"
-      : "text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+      ? "text-[#00BFFF]-600 dark:text-[#00BFFF]-500"
+      : "text-gray-600 dark:text-gray-400 hover:text-[#00BFFF]-600 dark:hover:text-[#00BFFF]-500"
   }`}
 >
 
@@ -83,7 +83,7 @@ export default function Header() {
               href="/Rishabh_Upadhyay_Resume-v2.pdf"
               download
               className="hidden md:inline-flex px-4 py-2 text-sm font-medium
-                         border border-blue-600 text-blue-600 dark:text-blue-500
+                         border border-blue-600 text-[#00BFFF]-600 dark:text-[#00BFFF]-500
                          rounded-md hover:bg-blue-600 hover:text-white transition"
             >
               Resume
@@ -110,7 +110,7 @@ export default function Header() {
             {/* Top */}
             <div className="h-16 px-6 flex items-center justify-between
                             border-b border-gray-200 dark:border-gray-800">
-              <span className="font-semibold text-blue-600 dark:text-blue-500">
+              <span className="font-semibold text-[#00BFFF]-600 dark:text-[#00BFFF]-500">
                 Navigation
               </span>
               <button onClick={() => setMenuOpen(false)}>
@@ -127,8 +127,8 @@ export default function Header() {
                   onClick={() => setMenuOpen(false)}
 className={`transition-colors ${
   active === sec
-    ? "text-blue-600 dark:text-blue-500"
-    : "text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+    ? "text-[#00BFFF]-600 dark:text-[#00BFFF]-500"
+    : "text-gray-600 dark:text-gray-400 hover:text-[#00BFFF]-600 dark:hover:text-[#00BFFF]-500"
 }`}
 
                 >
@@ -142,7 +142,7 @@ className={`transition-colors ${
                 download
                 onClick={() => setMenuOpen(false)}
                 className="px-6 py-3 border border-blue-600
-                           text-blue-600 dark:text-blue-500
+                           text-[#00BFFF]-600 dark:text-[#00BFFF]-500
                            rounded-md hover:bg-blue-600 hover:text-white transition"
               >
                 Resume
