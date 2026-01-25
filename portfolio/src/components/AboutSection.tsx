@@ -49,8 +49,8 @@ export default function AboutSection() {
         </p>
 
         <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-          Engineering reliable systems <br className="hidden md:block" />
-          across <span className="text-blue-600">Cloud, DevOps & AI</span>
+          Building Production-Ready Systems <br className="hidden md:block" />
+          with <span className="text-blue-600">Cloud, DevOps & AI</span>
         </h2>
       </motion.div>
 
