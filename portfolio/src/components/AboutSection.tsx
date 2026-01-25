@@ -8,25 +8,25 @@ import {
   FaNodeJs,
   FaPython,
   FaGitAlt,
+  FaMicrosoft,
 } from "react-icons/fa";
 import {
   SiKubernetes,
   SiTerraform,
   SiMongodb,
-  SiPostgresql,
 } from "react-icons/si";
 
 /* ===== Skills with Icons ===== */
 const skills = [
+  { name: "Python", icon: FaPython },
+  { name: "Node.js", icon: FaNodeJs },
+  { name: "React", icon: FaReact },
   { name: "AWS", icon: FaAws },
+  { name: "Azure", icon: FaMicrosoft },
   { name: "Docker", icon: FaDocker },
   { name: "Kubernetes", icon: SiKubernetes },
   { name: "Terraform", icon: SiTerraform },
-  { name: "React", icon: FaReact },
-  { name: "Node.js", icon: FaNodeJs },
-  { name: "Python", icon: FaPython },
   { name: "MongoDB", icon: SiMongodb },
-  { name: "PostgreSQL", icon: SiPostgresql },
   { name: "Git", icon: FaGitAlt },
 ];
 
@@ -50,10 +50,7 @@ export default function AboutSection() {
 
         <h2 className="text-4xl md:text-5xl font-bold leading-tight">
           Engineering reliable systems <br className="hidden md:block" />
-          across{" "}
-          <span className="text-blue-600">
-            Cloud, DevOps & AI
-          </span>
+          across <span className="text-blue-600">Cloud, DevOps & AI</span>
         </h2>
       </motion.div>
 
@@ -75,51 +72,44 @@ export default function AboutSection() {
 
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
               Associate Software Engineer II at Optum Global Solutions,
-              contributing to healthcare platforms supporting over{" "}
+              contributing to enterprise-scale healthcare platforms supporting{" "}
               <span className="font-semibold text-blue-600">
                 140M+ clinical decisions annually
               </span>
-              . I build secure, scalable, and performance-critical systems
-              used by a majority of U.S. health plans.
+              . I build secure, fault-tolerant, and performance-critical services.
             </p>
 
             <p className="text-gray-700 text-lg leading-relaxed">
-              Strong hands-on experience in cloud infrastructure, DevOps
-              automation, AI/ML systems, and full-stack development. I focus
-              on building systems that are reliable, cost-efficient, and
-              production-ready.
+              My experience spans cloud platforms, DevOps automation,
+              distributed systems, and backend-heavy full-stack development,
+              with production exposure to ML pipelines.
             </p>
           </div>
 
-          {/* ===== Skills Grid ===== */}
+          {/* Skills */}
           <div>
-            <h4 className="text-xl font-semibold mb-6">
-              Tech Stack
-            </h4>
+            <h4 className="text-xl font-semibold mb-6">Tech Stack</h4>
 
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6">
-              {skills.map((skill) => {
-                const Icon = skill.icon;
-                return (
-                  <div
-                    key={skill.name}
-                    className="flex flex-col items-center gap-2 group"
-                  >
-                    <Icon
-                      size={36}
-                      className="text-gray-500 group-hover:text-blue-600 transition-colors"
-                    />
-                    <span className="text-sm text-gray-600 group-hover:text-blue-600 transition-colors">
-                      {skill.name}
-                    </span>
-                  </div>
-                );
-              })}
+              {skills.map(({ name, icon: Icon }) => (
+                <div
+                  key={name}
+                  className="flex flex-col items-center gap-2 group"
+                >
+                  <Icon
+                    size={36}
+                    className="text-gray-500 group-hover:text-blue-600 transition-colors"
+                  />
+                  <span className="text-sm text-gray-600 group-hover:text-blue-600 transition-colors">
+                    {name}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </motion.div>
 
-        {/* ===== RIGHT: Timeline ===== */}
+        {/* RIGHT */}
         <div className="relative border-l border-gray-300 pl-8 space-y-14">
 
           {/* Experience 1 */}

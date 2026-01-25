@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaArrowUp,
+  FaPhoneAlt,
 } from "react-icons/fa";
 
 export default function ContactSection() {
@@ -45,9 +46,9 @@ export default function ContactSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
 
         {/* ================= LEFT ================= */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-10">
 
-          {/* Cursive Heading */}
+          {/* Heading */}
           <h2
             className="text-5xl md:text-6xl font-bold text-blue-600"
             style={{ fontFamily: "'Pacifico', cursive" }}
@@ -57,24 +58,61 @@ export default function ContactSection() {
 
           <p className="text-gray-700 max-w-md">
             I’m always open to discussing new opportunities, collaborations,
-            or just having a meaningful tech conversation.
+            or meaningful tech conversations.
           </p>
 
-          {/* Map Card */}
-          <div className="flex-1 rounded-xl border border-gray-300 overflow-hidden">
-            <iframe
-              title="My Location"
-              src="https://www.google.com/maps?q=India&output=embed"
-              className="w-full h-full"
-              loading="lazy"
-            />
+          {/* Social + Phone */}
+          <div className="flex flex-col gap-6 mt-6">
+
+            {/* Phone */}
+              <a
+                href="tel:+917011377819"
+                className="flex items-center gap-4 text-gray-700 hover:text-blue-600 transition"
+                aria-label="Call Phone Number"
+              >
+                <FaPhoneAlt size={22} className="text-blue-600" />
+                <span className="text-lg font-medium">
+                  +91&nbsp;7011377819
+                </span>
+              </a>
+
+
+            {/* Icons */}
+            <div className="flex gap-6">
+              <a
+                href="https://github.com/Rishabhupadhya"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="text-gray-600 hover:text-blue-600 transition"
+              >
+                <FaGithub size={28} />
+              </a>
+
+              <a
+                href="https://linkedin.com/in/rishabh-upadhyay-880294220"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-gray-600 hover:text-blue-600 transition"
+              >
+                <FaLinkedin size={28} />
+              </a>
+
+              <a
+                href="mailto:rishabh.292002@gmail.com"
+                aria-label="Email"
+                className="text-gray-600 hover:text-blue-600 transition"
+              >
+                <FaEnvelope size={28} />
+              </a>
+            </div>
           </div>
         </div>
 
         {/* ================= RIGHT ================= */}
         <div className="rounded-xl border border-gray-300 p-8 flex flex-col justify-between">
 
-          {/* FORM */}
           <form
             ref={formRef}
             onSubmit={sendEmail}
@@ -113,45 +151,13 @@ export default function ContactSection() {
               className="w-full p-3 rounded-md border border-gray-300 focus:border-blue-600 outline-none"
             />
 
-            {/* BUTTON + ICONS */}
-            <div className="flex items-center justify-between pt-4">
-
+            <div className="pt-4">
               <button
                 type="submit"
                 className="px-8 py-3 bg-blue-600 text-white rounded-md font-medium hover:bg-blue-700 transition"
               >
                 Send Message
               </button>
-
-              <div className="flex gap-4">
-                <a
-                  href="https://github.com/Rishabhupadhya"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                  className="text-gray-600 hover:text-blue-600 transition"
-                >
-                  <FaGithub size={26} />
-                </a>
-
-                <a
-                  href="https://linkedin.com/in/rishabh-upadhyay-880294220"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  className="text-gray-600 hover:text-blue-600 transition"
-                >
-                  <FaLinkedin size={26} />
-                </a>
-
-                <a
-                  href="mailto:rishabh.292002@gmail.com"
-                  aria-label="Email"
-                  className="text-gray-600 hover:text-blue-600 transition"
-                >
-                  <FaEnvelope size={26} />
-                </a>
-              </div>
             </div>
           </form>
         </div>

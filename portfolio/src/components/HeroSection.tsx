@@ -30,12 +30,13 @@ export default function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            I build scalable <br />
-            <span className="text-blue-600 dark:text-blue-500">
-              cloud, DevOps & AI
-            </span>{" "}
-            systems.
+          <h1 className="mb-6">
+            <span className="block text-4xl md:text-6xl font-bold text-blue-600">
+              Rishabh Upadhyay
+            </span>
+            <span className="block text-xl md:text-2xl font-medium text-gray-600 mt-2">
+              Software Engineer · Cloud, DevOps & Distributed Systems
+            </span>
           </h1>
 
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-lg mb-8">
