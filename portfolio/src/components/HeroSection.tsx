@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-const images = ["/hero-1.jpg", "/hero-2.jpg", "/hero-3.jpg"];
+const images = ["/hero-1-v2.jpg", "/hero-2-v2.jpg", "/hero-3-v3.jpg"];
 
 export default function HeroSection() {
   const [index, setIndex] = useState(0);
@@ -44,7 +44,7 @@ export default function HeroSection() {
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="/Rishabh_Upadhyay_Resume.pdf"
+              href="/Rishabh_Upadhyay_Resume-v2.pdf"
               download
               className="px-6 py-3 border border-gray-400 dark:border-gray-600
                          rounded-lg transition-colors
@@ -102,7 +102,7 @@ export default function HeroSection() {
                 src={images[index]}
                 alt="Rishabh Upadhyay"
                 fill
-                className="object-contain"
+                className="object-cover object-center rounded-xl"
                 priority={index === 0}
               />
             </motion.div>

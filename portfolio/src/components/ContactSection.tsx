@@ -16,6 +16,7 @@ export default function ContactSection() {
     e.preventDefault();
     if (!formRef.current) return;
 
+
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,

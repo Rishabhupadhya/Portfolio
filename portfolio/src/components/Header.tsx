@@ -52,7 +52,7 @@ export default function Header() {
           
           {/* Logo */}
           <a href="#top" className="flex items-center gap-3">
-            <Image src="/logo-ru.png" alt="RU Logo" width={32} height={32} />
+            <Image src="/logo-ru-v2.png" alt="RU Logo" width={32} height={32} />
             <span className="text-sm font-semibold text-blue-600 dark:text-blue-500">
               Rishabh Upadhyay
             </span>
@@ -80,7 +80,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             {/* Resume */}
             <a
-              href="/Rishabh_Upadhyay_Resume.pdf"
+              href="/Rishabh_Upadhyay_Resume-v2.pdf"
               download
               className="hidden md:inline-flex px-4 py-2 text-sm font-medium
                          border border-blue-600 text-blue-600 dark:text-blue-500
@@ -138,7 +138,7 @@ className={`transition-colors ${
 
               {/* Resume */}
               <a
-                href="/Rishabh_Upadhyay_Resume.pdf"
+                href="/Rishabh_Upadhyay_Resume-v2.pdf"
                 download
                 onClick={() => setMenuOpen(false)}
                 className="px-6 py-3 border border-blue-600
