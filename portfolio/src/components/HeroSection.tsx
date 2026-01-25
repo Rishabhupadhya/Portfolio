@@ -31,7 +31,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="mb-6">
-            <span className="block text-4xl md:text-6xl font-bold text-blue-600">
+            <span className="block text-4xl md:text-6xl font-bold text-[#00BFFF]-600">
               Rishabh Upadhyay
             </span>
             <span className="block text-xl md:text-2xl font-medium text-gray-600 mt-2">
@@ -49,8 +49,8 @@ export default function HeroSection() {
               download
               className="px-6 py-3 border border-gray-400 dark:border-gray-600
                          rounded-lg transition-colors
-                         hover:border-blue-600 hover:text-blue-600
-                         dark:hover:border-blue-500 dark:hover:text-blue-500"
+                         hover:border-blue-600 hover:text-[#00BFFF]-600
+                         dark:hover:border-blue-500 dark:hover:text-[#00BFFF]-500"
             >
               Download Resume
             </a>
@@ -59,8 +59,8 @@ export default function HeroSection() {
               href="#projects"
               className="px-6 py-3 border border-gray-400 dark:border-gray-600
                          rounded-lg transition-colors
-                         hover:border-blue-600 hover:text-blue-600
-                         dark:hover:border-blue-500 dark:hover:text-blue-500"
+                         hover:border-blue-600 hover:text-[#00BFFF]-600
+                         dark:hover:border-blue-500 dark:hover:text-[#00BFFF]-500"
             >
               View Projects
             </a>
@@ -69,8 +69,8 @@ export default function HeroSection() {
               href="#contact"
               className="px-6 py-3 border border-gray-400 dark:border-gray-600
                          rounded-lg transition-colors
-                         hover:border-blue-600 hover:text-blue-600
-                         dark:hover:border-blue-500 dark:hover:text-blue-500"
+                         hover:border-blue-600 hover:text-[#00BFFF]-600
+                         dark:hover:border-blue-500 dark:hover:text-[#00BFFF]-500"
             >
               Contact Me
             </a>
@@ -122,7 +122,7 @@ export default function HeroSection() {
               aria-label="GitHub profile"
               className="text-gray-600 dark:text-gray-400
                          transition-colors
-                         hover:text-blue-600 dark:hover:text-blue-500
+                         hover:text-[#00BFFF]-600 dark:hover:text-[#00BFFF]-500
                          focus-visible:outline-none"
             >
               <FaGithub size={26} />
@@ -147,7 +147,7 @@ export default function HeroSection() {
               aria-label="LinkedIn profile"
               className="text-gray-600 dark:text-gray-400
                          transition-colors
-                         hover:text-blue-600 dark:hover:text-blue-500
+                         hover:text-[#00BFFF]-600 dark:hover:text-[#00BFFF]-500
                          focus-visible:outline-none"
             >
               <FaLinkedin size={26} />
@@ -170,7 +170,7 @@ export default function HeroSection() {
               aria-label="Email"
               className="text-gray-600 dark:text-gray-400
                          transition-colors
-                         hover:text-blue-600 dark:hover:text-blue-500
+                         hover:text-[#00BFFF]-600 dark:hover:text-[#00BFFF]-500
                          focus-visible:outline-none"
             >
               <FaEnvelope size={26} />
