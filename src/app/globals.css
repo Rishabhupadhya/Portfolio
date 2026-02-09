@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark {
+  background-color: #020617; /* slate-950 */
+  color: #e5e7eb; /* gray-200 */
+}
+
+body {
+  @apply bg-slate-950 text-slate-50 antialiased;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+/* Soft interactive glow that follows cursor (powered by BackgroundGlow) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(56, 189, 248, 0.26),
+      transparent 55%
+    );
+  opacity: 0.9;
+  mix-blend-mode: screen;
+  z-index: -1;
+}
+
+/* Subtle base gradient / vignette */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top left, rgba(15, 23, 42, 0.6), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.9), #020617);
+  z-index: -2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #3b82f6; /* blue-500 */
+  outline-offset: 2px;
+}
+
+@layer components {
+  .glass-panel {
+    @apply rounded-2xl border border-slate-700/70 bg-slate-900/70 backdrop-blur-xl shadow-[0_24px_80px_rgba(15,23,42,0.9)];
+  }
+
+  .pill-nav-link {
+    @apply relative px-4 py-1.5 text-sm font-medium transition-colors text-slate-300/80 hover:text-sky-300;
+  }
+
+  .pill-nav-link-active {
+    @apply text-sky-300;
+  }
+
+  .pill-nav-link-active::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0.15rem;
+    bottom: 0.1rem;
+    height: 0.2rem;
+    border-radius: 999px;
+    background: linear-gradient(to right, #38bdf8, #a855f7);
+    opacity: 0.95;
+  }
+
+  .primary-button {
+    @apply relative inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-medium text-slate-50;
+  }
+
+  .primary-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(135deg, #0ea5e9, #22c55e, #a855f7);
+    opacity: 0.95;
+  }
+
+  .primary-button span {
+    position: relative;
+    z-index: 1;
+  }
+
+  .primary-button:hover::before {
+    filter: brightness(1.08);
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-medium border border-slate-600/80 text-slate-200/90 bg-slate-900/40 backdrop-blur-lg hover:border-sky-400/80 hover:text-sky-300 transition-colors;
+  }
+}
