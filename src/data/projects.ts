@@ -11,7 +11,7 @@ const projects:Project[] = [
     description:
       "Built an AI-powered content repurposing platform that converts long-form content into platform-optimized formats such as LinkedIn posts, Twitter/X threads, Instagram carousels, newsletters, and SEO metadata using modular prompt pipelines and audience-aware generation.",
     tech: "Node.js, OpenAI API, React, Tailwind CSS",
-    liveLink: "https://repurpose.ai",
+    liveLink: "https://ai-content-repurpose-seven.vercel.app/",
     githubLink: "https://github.com/Rishabhupadhya/ai-content-repurpose",
   },
   {
